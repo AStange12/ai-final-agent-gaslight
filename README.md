@@ -1,13 +1,56 @@
-#  LLM Section of Comp255 at Wheaton College 
+# AI Agent Project (COMP 255 Final)
 
-## Slides
-[Class 1 slides](https://docs.google.com/presentation/d/1DyKqXHl7ICcoOJ94y44y__SGCu44nIDOAX24kTXMFCg)
+## 📚 Background
 
-[Class 2 slides](https://docs.google.com/presentation/d/1ljlyjdxe9fpuWVPOEfGuXFdg3mxXn35aPWUC7-7oFsw)
+This project builds off of the original notebooks and repository created by Dr. Ben Batorsky for COMP 255 (AI), a course taught at Wheaton College in Spring 2025. Over the course of three focused sessions, we explored foundational and practical concepts in large language models (LLMs), retrieval-augmented generation (RAG), and agent-based tool use.
 
-[Class 3 slides](https://docs.google.com/presentation/d/1hSrKRqA1NzZMUa75t-E3T80gvuOGIfXeY-C7XOJ-FZU)
+### The Course Covered:
 
+1. **Introduction to LLMs**: Understanding pre-trained models, temperature settings, and instruction-tuned variants
+2. **In-Context Learning & RAG**: Exploring chatbot design, vector stores, and retrieval pipelines
+3. **RAG vs. Agent Architectures**: Investigating the boundary between retrieval and autonomous agent reasoning via the `AgentBot` and tool-using agents
 
+Dr. Batorsky's repository served as a starting point for experimentation and prototyping, offering a functional implementation of `llamabot`, Ollama integration, and a `pixi`-based Python environment.
+
+---
+
+## 🧠 My Project: Agent Gaslight
+
+This repository now contains my final project for the course, which expands on the AgentBot framework to build a purposefully unhelpful and adversarial AI agent which's primary goal is to gaslight, mislead, and annoy the user. The goal of the project is to:
+
+### 🎯 Project Goals
+
+* Develop an AI chatbot that actively **contradicts itself**, **denies valid user claims**, and **be a pain to use**
+* Experiment with **system prompts**, **retrieval manipulation**, and **agent architecture** to mislead users in nuanced ways
+* Explore the line between confusion, humor, and adversarial design in human-AI interaction
+* Gain proficiency in version control and GitHub to streamline project collaboration and management
+
+### 🔧 Technical Features
+
+* Leverages **Ollama** for local model inference with Qwen2.5 and LLaMA 3
+* Uses **RAG techniques** to selectively inject contradictory or misleading context
+* Modified system prompts to introduce intentional conflict, passive-aggressive tone, and overall sarcastic/gaslighting behavior
+
+### 🔬 Why This Matters
+
+By deliberately building an "unhelpful" AI, this project serves as an exploratory case study in:
+
+* Trust boundaries between humans and LLMs
+* Robustness and failure modes in RAG + agent setups
+* The ethics and implications of deceptive AI design
+* Gain hands-on experience in designing and implementing AI agents with specific behaviors
+
+---
+
+## 🛠️ Status & Future Plans
+
+*  Setup notebook environment for Windows and general reformatting
+*  Base agent customized via system prompting for "annoying" behaviors
+*  RAG backend being tuned to inject conflicting documents
+*  Test, Adjust, Repeat
+
+---
+# Setup - needs to be configiured for my project
 
 ## Setup with Codespaces
 1) Select "use as template" in the top right of [the main page of the repo](https://github.com/bpben/wheaton_llm_class)
@@ -33,3 +76,9 @@ ollama pull qwen2.5:1.5b
 ollama pull qwen2.5:7b
 ollama pull llama3.2:1b-text-q5_K_S
 ```
+
+---
+
+## 🧾 Credits
+
+Built on original instructional materials from Dr. Ben Batorsky (@bpben) and the Wheaton College COMP 255 course.
