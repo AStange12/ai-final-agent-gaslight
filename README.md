@@ -89,4 +89,6 @@ Built on original instructional materials from Dr. Ben Batorsky (@bpben) and the
 - **pixi.lock** – Lock file that ensures consistent environment builds across machines.
 - **README.md** – This file. Contains the overview, setup instructions, and file guide.
 
-**Note:** This project is still a work in progress. While it includes all core components intended for the final submission, further refinements, enhancements, and polish are ongoing beyond the grading deadline.
+---
+
+**Note:** This project is still a work in progress. While it includes all core components required for the final submission, additional refinements and enhancements are ongoing beyond the grading deadline. These improvements aim to strengthen it as a strong portfolio piece, but also, in hopes for it to be a useful reference and teaching aid for COMP 255 and similar AI-focused courses in the future.
