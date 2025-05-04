@@ -1,5 +1,10 @@
 # AI Agent Project (COMP 255 Final)
 
+## 👤 Author
+
+**Aaron Stange**  
+*Sophomore, Wheaton College (Class of 2027)*  
+
 ## 📚 Background
 
 This project builds off of the original notebooks and repository created by Dr. Ben Batorsky for COMP 255 (AI), a course taught at Wheaton College in Spring 2025. Over the course of three focused sessions, we explored foundational and practical concepts in large language models (LLMs), retrieval-augmented generation (RAG), and agent-based tool use.
@@ -25,7 +30,7 @@ While the tone of the bot is deliberately mischievous, the notebook itself is de
 - 📚 **Retrieval-Augmented Generation (RAG)** – Allowing the agent to dynamically access and use external knowledge to support its responses (or confuse the user even more).
 - 🔁 **Agentic Workflows** – Exploring how AI agents make decisions and coordinate between tools, prompts, and documents to carry out tasks (even if poorly on purpose).
 
-The goal is to provide a fun, memorable, and hands-on learning experience that covers both the technical mechanics of building AI agents and the nuanced effects of prompt and tool design—no matter how chaotic the output may be.
+The goal is to provide a fun, memorable, and hands-on learning experience that covers both the technical mechanics of building AI agents and the nuanced effects of prompt and tool design, no matter how chaotic the output may be.
 
 ### 🎯 Project Goals
 
@@ -80,8 +85,9 @@ The main model used is [7B version of Qwen2.5](https://ollama.com/library/qwen2.
 
 ## 🧾 Credits
 
-Built on original instructional materials from Dr. Ben Batorsky (@bpben) and the Wheaton College COMP 255 course.
-- **VS-code's Copilot** for providing suggestions to improve code readability and structure, but mainly for helping with formatting the markdown
+- **Dr. Ben Batorsky (@bpben)** for providin/teaching the original instructional materials and repository that served as the foundation for this project.
+- **ChatGPT** for assisting in the overall building of the project and offering step-by-step instructions for using GitHub and version control effectively.
+- **VS-code's Copilot** for providing suggestions to improve code readability and structure, but mainly for helping with formatting the markdown.
 
 ## 📁 Project Files
 - **Project_Agent_Gaslight.ipynb** – The main notebook containing the implementation of the gaslighting AI agent, showcasing system prompting, agent tools, and RAG.
