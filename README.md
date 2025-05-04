@@ -16,20 +16,30 @@ Dr. Batorsky's repository served as a starting point for experimentation and pro
 
 ## 🧠 My Project: Agent Gaslight
 
-This repository now contains my final project for the course, which expands on the AgentBot framework to build a purposefully unhelpful and adversarial AI agent which's primary goal is to gaslight, mislead, and annoy the user. The goal of the project is to:
+This repository now contains my final project for the course, which expands on the Agentic workflow to build a purposefully unhelpful and adversarial AI agent which's primary goal is to be sarcastic and funny, but also, gaslight, mislead, and annoy the user (I think he's funny). 
+
+While the tone of the bot is deliberately mischievous, the notebook itself is designed as a practical and approachable guide to core concepts in agent-based AI development. Through the lens of this chaotic assistant, readers are introduced to:
+
+- 🧠 **System Prompting** – Crafting a consistent personality and behavioral framework using language alone.
+- 🧰 **Tool Integration** – Giving the agent access to custom-built functions that extend its abilities (for better or worse).
+- 📚 **Retrieval-Augmented Generation (RAG)** – Allowing the agent to dynamically access and use external knowledge to support its responses (or confuse the user even more).
+- 🔁 **Agentic Workflows** – Exploring how AI agents make decisions and coordinate between tools, prompts, and documents to carry out tasks (even if poorly on purpose).
+
+The goal is to provide a fun, memorable, and hands-on learning experience that covers both the technical mechanics of building AI agents and the nuanced effects of prompt and tool design—no matter how chaotic the output may be.
 
 ### 🎯 Project Goals
 
-* Develop an AI chatbot that actively **contradicts itself**, **denies valid user claims**, and **be a pain to use**
-* Experiment with **system prompts**, **retrieval manipulation**, and **agent architecture** to mislead users in nuanced ways
+* Develop an AI chatbot that actively **contradicts itself**, **denies valid user claims**, and **be sarcastic and annoying**
+* Experiment with **system prompts **tool use**, **retrieval manipulation**, and **agent architecture** to mislead users in nuanced ways
 * Explore the line between confusion, humor, and adversarial design in human-AI interaction
-* Gain proficiency in version control and GitHub to streamline project collaboration and management
+* Gain proficiency in Agentic Workflows and Version Control/GitHub to streamline project collaboration and management
 
 ### 🔧 Technical Features
 
-* Leverages **Ollama** for local model inference with Qwen2.5 and LLaMA 3
-* Uses **RAG techniques** to selectively inject contradictory or misleading context
+* Leverages **Ollama** for local model inference with qwen2.5:7b
 * Modified system prompts to introduce intentional conflict, passive-aggressive tone, and overall sarcastic/gaslighting behavior
+* Implements **tool use** via Python functions to actively deny user inputs and provide responses designed to annoy or frustrate the user
+* Uses **RAG techniques** to selectively inject contradictory or misleading context
 
 ### 🔬 Why This Matters
 
@@ -38,47 +48,45 @@ By deliberately building an "unhelpful" AI, this project serves as an explorator
 * Trust boundaries between humans and LLMs
 * Robustness and failure modes in RAG + agent setups
 * The ethics and implications of deceptive AI design
-* Gain hands-on experience in designing and implementing AI agents with specific behaviors
+
+But more importantly:
+
+* The role of humor in human-AI interaction and its potential to create engaging experiences
+* The creative possibilities of leveraging AI for entertainment and lighthearted applications
+* How playful design can foster curiosity and exploration of advanced AI concepts
+* The bot made me chuckle and that was reward enough
 
 ---
 
 ## 🛠️ Status & Future Plans
 
-*  Setup notebook environment for Windows and general reformatting
-*  Base agent customized via system prompting for "annoying" behaviors
-*  RAG backend being tuned to inject conflicting documents
-*  Test, Adjust, Repeat
+*  Setup notebook environment for Windows and general reformatting ✅
+*  Base agent customized via system prompting for "annoying" behaviors ✅
+*  Implement effective tools that use bot can use to twist users words 🕰️
+*  Implement RAG to inject conflicting documents/ paper on 'gaslighting' ❌
+*  Polish up to be a helpful notebook and possibly used in future classes 🕰️
 
 ---
-# Setup - needs to be configiured for my project
-
-## Setup with Codespaces
-1) Select "use as template" in the top right of [the main page of the repo](https://github.com/bpben/wheaton_llm_class)
-2) Click on "Open in a Codespace, which will start a [Github Codespace](https://github.com/features/codespaces)
-NOTE: This will take some time on the first run, and it's not clear when the environment is finished building. Leave it for some time before following the directions under "installing models".
-
-## Setup locally
+# Setup 
 1) Install pixi - Follow instructons [here](https://pixi.sh/latest/#installation)
 2) Install [Ollama](https://ollama.com/)
-3) If you are using VSCode, you should be able to open the notebooks and select the pixi kernel.  If not, you can use Jupyter Lab installed as part of the pixi environment.  In a terminal write `pixi shell`.  This will activate the pixi environment.  Then write `jupyter lab` and Jupyter Lab will open, allowing you to navigate to the notebooks and run the exercises.
+3) If you are using VSCode, you should be able to open the notebooks and select the pixi kernel. In a terminal write `pixi shell`. This will activate the pixi environment.
 4) In a terminal, type `ollama serve`.  If you are on MacOS, you should see a little Llama icon in the top of your screen.
 
 ## Installing models
-The main model used is [qwen2.5:1.5b](https://ollama.com/library/qwen2.5:1.5b).  To pull this model run `ollama pull qwen2.5:1.5b`.
-
-To run the first few cells of the first notebook, you will need the [pretrained version of llama 3.2](https://ollama.com/library/llama3.2:1b-text-q5_K_S): `ollama pull llama3.2:1b-text-q5_K_S`.
-
-The agent workflow will likely fail unless you use the [7B version of Qwen2.5](https://ollama.com/library/qwen2.5:7b): `ollama pull qwen2.5:7b`.  Note - this can be used in place of the 1.5b parameter model, but you will need to change the `sft_model` parameter in the notebooks.
-
-To run ALL notebooks:
-```
-ollama pull qwen2.5:1.5b
-ollama pull qwen2.5:7b
-ollama pull llama3.2:1b-text-q5_K_S
-```
+The main model used is [7B version of Qwen2.5](https://ollama.com/library/qwen2.5:7b): type `ollama pull qwen2.5:7b`, in the terminal. 
 
 ---
 
 ## 🧾 Credits
 
 Built on original instructional materials from Dr. Ben Batorsky (@bpben) and the Wheaton College COMP 255 course.
+- **VS-code's Copilot** for providing suggestions to improve code readability and structure, but mainly for helping with formatting the markdown
+
+## 📁 Project Files
+- **Project_Agent_Gaslight.ipynb** – The main notebook containing the implementation of the gaslighting AI agent, showcasing system prompting, agent tools, and RAG.
+- **pyproject.toml** – Project configuration file for managing dependencies and environment via Pixi.
+- **pixi.lock** – Lock file that ensures consistent environment builds across machines.
+- **README.md** – This file. Contains the overview, setup instructions, and file guide.
+
+**Note:** This project is still a work in progress. While it includes all core components intended for the final submission, further refinements, enhancements, and polish are ongoing beyond the grading deadline.
